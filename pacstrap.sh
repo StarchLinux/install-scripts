@@ -2,10 +2,6 @@
 
 . /lib/starch-install-scripts/common.sh
 
-function msg {
-	echo "$@" >&2
-}
-
 test "$#" -eq 0 && {
 	msg "No target directory given"
 	exit 1

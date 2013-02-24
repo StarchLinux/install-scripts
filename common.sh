@@ -1,3 +1,7 @@
+function msg {
+	echo "$@" >&2
+}
+
 function mount_noted {
 	mount "$@" && NOTED_MOUNTS=("$4" "${NOTED_MOUNTS[@]}")
 }
